@@ -16,7 +16,7 @@
     --glut: #e9b874;
   }
   * { box-sizing: border-box; }
-  html, body { margin: 0; height: 100%; }
+  html, body { margin: 0; }
   body {
     background: radial-gradient(120% 80% at 50% 40%, #2a1f17 0%, var(--grund) 70%);
     color: var(--text);
@@ -33,7 +33,7 @@
   }
   .rahmen {
     position: relative; width: min(100%, 880px); aspect-ratio: 1497 / 998;
-    border-radius: 14px; overflow: hidden;
+    border-radius: 14px; overflow: hidden; flex-shrink: 0;
     box-shadow: 0 20px 60px rgba(0,0,0,.55), 0 0 0 1px rgba(233,184,116,.12);
   }
   .rahmen img {
